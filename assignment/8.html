@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            max-width: 100%;
+            margin: 0;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+        }
+        .div1{
+            height:auto;
+            width: 300px;
+            margin: auto;
+  background-color:#FFFFFF;
+  border: 15px solid transparent;
+  padding: 15px;
+  border-image-source:url('i1.png');  
+  border-image-repeat: stretch;
+  border-image-slice: 30;
+  border-image-width: 10px;
+  border-image-outset: 10px;
+              
+        }
+        .div2{
+            height:300px;
+            width: 400px;
+            margin: auto;
+            background-image: linear-gradient(red,green);
+            top: 30px;
+            display: grid;  
+            background-color: #FFFFFF;   
+            position: relative;
+        }
+        .div3{
+            position: absolute;
+                height: 200px;
+                width: 200px;
+            padding: 10px;
+            background-color: #FFFFFF;
+            margin: 50px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="div1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi autem sit vero nisi ducimus quas blanditiis numquam architecto maxime voluptate officia alias tempore perspiciatis, quae amet ut, rerum reiciendis? Quidem?
+
+    </div>
+    <div class="div2">
+       <div class="div3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum modi ducimus quae quisquam. Culpa aliquam incidunt cumque minus! Harum consequuntur officiis repellat assumenda id a accusamus molestiae sunt fuga quos!
+        </div>
+        </div>
+    </div>
+</body>
+</html>

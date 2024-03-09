@@ -1,0 +1,320 @@
+.main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 40px;
+}
+    a{
+        text-decoration: none;
+    }
+
+
+.btn {
+    height: 50px;
+    width: 200px;
+    border: 1px solid blue;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.btn:hover {
+    box-shadow: 0px 3px 5px blue;
+    scale: 0.95;
+}
+
+.btn12::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(12, 11, 11, 0.451);
+    transform: scaley(0);
+    
+
+    transition: 1s ease;
+    z-index: -1;
+}
+
+.btn12:hover::after {
+    transform: scaley(100%);
+}
+
+
+
+
+.btn1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(12, 11, 11, 0.451);
+    
+    transform: scaleX(0);
+
+    transition: 1s ease;
+    z-index: -1;
+}
+
+.btn1:hover::after {
+    transform: scalex(100%);
+}
+
+
+
+
+
+.btn2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(12, 11, 11, 0.451);
+    
+    transform: scaleX(0);
+    transform-origin: left; 
+
+    transition: 1s ease;
+    
+}
+
+.btn2:hover::after {
+    transform: scale(1);
+}
+
+
+.btn3:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(12, 11, 11, 0.451);
+    
+    transform: scalex(0);
+    transform-origin: right; 
+
+    transition: 1s ease;
+    
+}
+
+.btn3:hover::after {
+    transform: scale(1);
+    
+}
+
+
+
+
+.btn4::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(12, 11, 11, 0.451);
+    
+    transform: scaley(0);
+    transform-origin: top; 
+
+    transition: 1s ease;
+    
+}
+
+.btn4:hover::after {
+    transform: scale(1);
+}
+
+
+.btn5::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(12, 11, 11, 0.451);
+    
+    transform: scaley(0);
+    transform-origin: bottom; 
+
+    transition: 1s ease;
+    
+}
+
+.btn5:hover::after {
+    transform: scale(1);
+}
+
+
+.btn6::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(21, 21, 22, 0.458);
+    transform: scale(0);
+    transform-origin: 0% 100%;
+    transition: 0.5s ease;
+    z-index: -1;
+}
+
+.btn6:hover::after {
+    transform: scale(1);
+}
+
+
+.btn7::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(21, 21, 22, 0.458);
+    transform: scale(0);
+    transform-origin: 100% 0%;
+    transition: 0.5s ease;
+}
+
+.btn7:hover::after {
+    transform: scale(1);
+}
+
+
+.btn8::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(21, 21, 22, 0.458);
+    transform: scale(0);
+    transform-origin: 0% 100%;
+    transform-origin: top left;
+    transition: 0.5s ease;
+}
+
+.btn8:hover::after {
+    transform: scale(1);
+}
+
+.btn9::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(21, 21, 22, 0.458);
+    transform: scale(0);
+    transform-origin: 0% 100%;
+    transform-origin: bottom right; 
+    transition: 0.5s ease;
+}
+
+.btn9:hover::after {
+    transform: scale(1);
+}
+
+.btn10::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(21, 21, 22, 0.458);
+    transform: scale(0);
+     
+    transition: 0.5s ease;
+}
+
+.btn10:hover::after {
+    transform: scale(1);
+}
+
+
+.btn11::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    
+     
+
+}
+
+.btn11:hover {
+    background-color: rgba(18, 18, 23, 0.699);
+    
+}
+
+
+
+
+.btn13::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+background-color: rgba(0, 0, 0, 0.644);
+        transform: scale(0);
+    
+       
+        transition: 1s ease;
+
+}
+
+.btn13:hover {
+    width: 40%;
+    transform: scale(1);
+
+    
+    
+}
+
+
+
+
+.btn14::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(12, 11, 11, 0.451);
+    
+   transform: scale(0);
+     
+
+    transition: 1s ease;
+    
+}
+
+.btn14:hover::after {
+    transform: scale(3,1);
+    background-color: rgba(0, 0, 0, 0.772);
+}

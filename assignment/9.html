@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        img {
+            height: auto;
+            max-width: 100%;
+        }
+
+        .div3{
+            grid-column: 3;
+            grid-row: 1 / span 2;
+        }
+        .div4{
+            grid-row: 2 / span 2;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="div1">
+            <img src="https://wonderfulengineering.com/wp-content/uploads/2014/10/image-wallpaper-15.jpg" alt="">
+        </div>
+        <div class="div2">
+            <img src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?cs=srgb&dl=clouds-cloudy-countryside-236047.jpg&fm=jpg" style="width: 100%;" alt="">
+        </div>
+        <div class="div3">
+            <img src="https://wallpapercave.com/wp/wp6900337.jpg " alt="">
+        </div>
+        <div class="div4">
+            <img src="https://wallpapercave.com/wp/wp6900337.jpg" alt="">
+        </div>
+        <div class="div5">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.F0wUfJNaGhGHqfL6m5HPmgHaEK&pid=Api&P=0&h=180" style="width: 100%;" alt="">
+        </div>
+        <div class="div6">
+            <img src="https://wallup.net/wp-content/uploads/2016/01/200493-animals-nature-birds.jpg" alt="">
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  
+  transform: scale(0);
+  
+  transition: 1s ease;
+}
+
+.container:hover .overlay {
+  
+  transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container:hover.text{
+    
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <img src="http://4.bp.blogspot.com/-KlFQJAMBBHo/UjQlDFI3QcI/AAAAAAAAYg4/fTAY4TGxDYc/s1600/Taj+Mahal+Desktop+Wallpapers+%25283%2529.jpg"  class="image">
+  <div class="overlay">
+    <div class="text">Image Overlay</div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+    <style>
+    *{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .container{
+        border: 2px solid black;
+        width: 400px;
+        position: relative;
+        margin: 10px;
+        display: flex;
+
+    }
+    img{
+        height: auto;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+    .container .text{
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0;
+        width: 100%;
+        display: grid;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.53);
+        color: aliceblue;
+        place-items: center;
+        transition: 1s ease;
+        gap: 30px;
+    }
+    .container:hover .text{
+        height: 30%;
+        display: flex;
+    }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div>
+                <img src="http://4.bp.blogspot.com/-KlFQJAMBBHo/UjQlDFI3QcI/AAAAAAAAYg4/fTAY4TGxDYc/s1600/Taj+Mahal+Desktop+Wallpapers+%25283%2529.jpg" alt="">
+            </div>
+            <div class="text">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+</body>
+</html>

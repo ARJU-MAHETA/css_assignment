@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="overlay.css">
+<style>
+    *{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+.overEx3{
+    width: 400px;
+    border: 2px solid black;
+    position: relative;
+    margin: 10px;
+}
+.overEx3 .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    transform: scale(0);
+    border-radius: 50%;
+    /* transform-origin: 0% 100%; */
+}
+.overEx3:hover .text{
+    background-color: rgba(0, 0, 0, 0.714);
+    transform: scale(1);
+    border-radius: 0;
+}
+.overEx3 .textover{
+    /* transform: scale(0); */
+    transform: scale(1);
+    transition: 1s ease;
+}
+.overEx3:hover .textover{
+    transition-delay: 2s ease;
+    transform: scale(1) rotate(360deg); 
+   
+}
+</style>
+    
+</head>
+
+<body>
+   
+    <div class="overEx3">
+        <div>
+            <img src="https://imagekit.io/blog/content/images/2019/12/image-optimization.jpg" alt="">
+        </div>
+        <div class="text">
+            <div class="textover">
+                <h1>Image Overlay</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

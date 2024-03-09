@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .main{
+            background-color: orange;
+            min-height: 500px;
+            display: flex;
+            position: relative;
+        }
+        .container{
+            position: absolute;
+            margin: 200px;
+            right: 300px;
+            padding: 30px;
+            background-color: rgb(185, 7, 244);
+            max-width: 600px;
+            height: auto;
+            color: aliceblue;
+
+        }
+        h6{
+            margin-top: 10px;
+        }
+        input{
+            border:none;
+            border-bottom: 1px solid white;
+            padding: 15px;
+            margin: 5px 0;
+            background-color:rgb(185, 7, 244);
+            color: white;
+        
+        }
+        ::placeholder{
+            color: aliceblue;
+        }
+        .btn{
+            background-color: rgba(250, 250, 251, 0.745);
+            border: 1px solid rgba(0, 0, 0, 0.673);
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px 20px;
+            display: flex;
+        }
+        .image_box{
+            
+            display: flex;
+        }
+        img{
+            align-items: center;
+            height: 410px;
+            width: 400px;
+            margin: 200px;
+            margin-left: 335px;
+           
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form action="" class="container">
+            <h1>Login</h1>
+            <h6>Lets go started</h6>
+            <div>
+            <input type="text" placeholder="Enter email" required>
+            <i class="fa-solid fa-user"></i>
+            </div>
+            <div>
+            <input type="text" placeholder="Enter password" required>
+            <i class="fa-solid fa-key"></i> 
+             </div>
+             <div>
+                <h5>forget password click here</h5>
+                        <button type="submit" class="btn">Login
+            
+            </button>
+            </div>
+        </form>
+        <div class="image_box">
+            <img src="image/1.jpg" alt="">
+        </div>
+
+    </div>
+</body>
+</html>

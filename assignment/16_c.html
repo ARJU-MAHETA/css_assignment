@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .container{
+        border: 2px solid black;
+        width: 400px;
+        position: relative;
+        margin: 10px;
+
+    }
+    img{
+        height: auto;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+    .container .text{
+        top: 0;
+        right: 0;
+        bottom: 0;
+        
+        height:100%;
+        width: 0;
+       
+        display: grid;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.725);
+        color: aliceblue;
+        place-items: center;
+        transition: 1s ease;
+    }
+    .container:hover .text{
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div>
+                <img src="http://4.bp.blogspot.com/-KlFQJAMBBHo/UjQlDFI3QcI/AAAAAAAAYg4/fTAY4TGxDYc/s1600/Taj+Mahal+Desktop+Wallpapers+%25283%2529.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Display overlay</p>
+            </div>
+        </div>
+</body>
+</html>
