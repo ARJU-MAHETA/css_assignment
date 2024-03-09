@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ImageScale {
+            height: auto;
+            width: 200px;
+            border: 3px solid black;
+            overflow: hidden;
+        }
+
+        img {
+            height: auto;
+            max-width: 100%;
+            vertical-align: middle;
+            transition: 1s ease-in-out;
+        }
+
+        .ImageScale:hover img {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ImageScale">
+        <img src="image/1.jpg"alt="">
+    </div>
+</body>
+
+</html>
